@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Client Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="clientPage.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="progress.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="clientCompanyPage.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid" id="mask-content">
+            <!-- email line-->
+            <div class="container" style="font-size:13px;" id="header-line-1">
+                <div class="row font-weight-light">
+                    <p class="float-left">7508882095 | biswassrijeet@gmail.com</p>
+                    <div class="float-right ml-auto">
+                        <button class="navbar-buttons" id="login_btn" data-toggle="modal" data-target="#exampleLoginModal">login</button>
+                        <button class="navbar-buttons" id="logout_btn" data-toggle="modal" data-target="#exampleRegisterModal">register</button>
+                        <!-- TODO : language translator button (NEEDS ATTENTION) -->
+                        <button class="navbar-buttons">language</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /email line/ -->
+            <!-- modals nav -->
+            <div class="modal fade" id="exampleLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- CONTRIBUTER :AMIT KUMAR RANJAN -->
+                            <iframe src="login-box-concept/login_page.html" style="outline:0;border:0;" height="600px"
+                                width="500px"></iframe>
+                            <!-- /CONTRIBUTION login page/ -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal fade" id="exampleRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- contribtion by:amit kumar ranjan :logout page-->
+                            <iframe src="login-box-concept/signUp_page.html" style="outline:0;border:0;" height="600px"
+                                width="600px"></iframe>
+                            <!-- /logout page /-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /modals end/ -->
+            <!-- main navbar -->
+            <div class="container-fluid p-0 affix-top" id="header-line-2" data-spy="affix" data-offset-top="5" style="z-index:99999;">
+                <div class="container-fluid mt-4 font-weight-light">
+                    <div class="row logo float-left">
+                    </div>
+                    <div class="float-right ml-auto d-inline-flex">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-secondarysecondary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                Search Jobs
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Jobs by skills</a>
+                                <a class="dropdown-item" href="#">Jobs by course</a>
+                                <a class="dropdown-item" href="#">Goverment Jobs</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ml-1">
+                            <button type="button" class="btn btn-secondarysecondary  btn-sm dropdown-toggle"
+                                data-toggle="dropdown">
+                                Career Info
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Interview Prepration</a>
+                                <a class="dropdown-item" href="#">Top Companies</a>
+                                <a class="dropdown-item" href="#">Salary and Appraisal</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ml-1">
+                            <button type="button" class="btn btn-secondarysecondary  btn-sm dropdown-toggle"
+                                data-toggle="dropdown">
+                                Learning
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Project Management</a>
+                                <a class="dropdown-item" href="#">Leadership Skills</a>
+                                <a class="dropdown-item" href="#">Human Resourse</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ml-1">
+                            <button type="button" class="btn btn-secondarysecondary  btn-sm dropdown-toggle"
+                                data-toggle="dropdown">
+                                More
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Job Alert</a>
+                                <a class="dropdown-item" href="#">Learning</a>
+                                <a class="dropdown-item" href="#">Carrer Info</a>
+                            </div>
+                        </div>
+                        <button class="custom-header-button btn3d font-weight-bold mb-3">Consult us</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /main navbar/ -->
+            <!-- 2 cards -->
+            <div class="container header-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <h3 class="h3-responsive text-justify-left">
+                                Recurit Smart Recruit Right
+                            </h3>
+                        </div>
+                        <div class="row mt-5">
+                            <p class="p-responsive text-justify-left">
+                                The goal of your social channels is to build community, and you do that by providing value.
+                                We are not just recruting employees but we are sowing the seeds of our reputation.
+                                I am convinced that nothing we do is more important than hiring and developing people.
+                                At the end of the day you bet on people, not on strategies.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <!-- <button class="custom-header-button-2"><span>Post jobs</span></button> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="z-index:10">
+                        <div class="play-button mr-auto ml-auto" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                class="fas fa-play"></i></span></div>
+    
+                    </div>
+                </div>
+            </div>
+            <!-- / 2 cards / -->
+            <!-- video modal -->
+            <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content" id="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" id="close">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container p-0">
+                                <div class="row ml-auto mr-auto">
+                                    <iframe id="iframe-video" width="auto" height="auto" src="https://www.youtube.com/embed/di6iwHhrH6s"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /video modal/ -->
+            <!-- 4 cards -->
+            <div class="container feature-cards">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
+                        <div class="row font-weight-bold">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
+                                Top Employers
+                            </p>
+                        </div>
+                        <div class="row" data-aos="flip-up">
+                            <p class="p-responsive text-justify-left ml-2">
+                                We have tie up with companies like Google, Microsoft, IBM, Thyrocare, SBI Life, Deloitte,
+                                Infosys and American Express
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
+                        <div class="row font-weight-bold">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
+                                Opportunity for you
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
+                                Get smart responses with unique two-way matching technology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
+                        <div class="row font-weight-bold">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
+                                Top Consultants
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
+                                Our Top consultants are Firefly, Morgenall, NIIT, IHiring
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
+                        <div class="row font-weight-bold">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
+                                Feature
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
+                                More than 2.6 Lakh candidates are registered with us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / 4 cards / -->
+        </div>
+    </header>
+    <!-- main section -->
+    <main>
+        <div class="container-fluid p-0">
+            <div class="container main-first-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="h3-responsive text-justify-center main-first-content-label">Cutting the edge
+                            features</h3>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p class="p-responsive  font-weight-bold text-justify-center text-disabled">
+                            Your new recruitment agency website will be very easy to update yourself, even from your
+                            phone.
+                            With a content management system, job search and management, and a CV library your site is
+                            focused
+                            on the recruitment task.
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p class="p-responsive  font-weight-bold text-justify-center text-disabled">
+                            We have listed out a few of the recruitment website features that we are able to offer you
+                            and
+                            your new website and with our powerful and flexible system we are constantly adding new
+                            features
+                            so to see what is new, what that may mean for your business just get
+                            in touch and we will work with you to find your best solution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container col-md-12 m-0">
+                <div class="row">
+                    <div class="col-md-6 main-container-2">
+
+                    </div>
+                    <div class="col-md-6" id="main-container-2-content">
+                        <div class="conainer-fluid" style="margin-bottom:10px;">
+                            <div class="row m-0">
+                                <h3 class="h3-responsive col-md-12 text-justify-center" id="figures-header">Our Figures</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="p-responsive text-disabled font-weight-bold" id="figures-text">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Id dolores, consectetur quidem praesentium ad
+                                corporis iure nobis dicta quas molestias expedita pariatur quibusdam sed cupiditate
+                                quod magni itaque hic nemo.</p>
+                        </div>
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="p-resposive text-justify-left font-weight-bold">I.T.</p>
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <p class="p-resposive  float-right font-weight-bold">50%</p>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <span class="skill">I.T.<i class="val">50%</i></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="p-resposive text-justify-left font-weight-bold">Management</p>
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <p class="p-resposive  float-right font-weight-bold">50%</p>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <span class="skill">Management<i class="val">50%</i></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="p-resposive text-justify-left font-weight-bold">Banking</p>
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <p class="p-resposive  float-right font-weight-bold">60%</p>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <span class="skill">Banking<i class="val">60%</i></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="p-resposive text-justify-left font-weight-bold">Others</p>
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <p class="p-resposive  float-right font-weight-bold">80%</p>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <span class="skill">Others<i class="val">80%</i></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top companies contributed -->
+        <div class="container-fluid" id="top-companies">
+            <div class="row">
+                <h3 class="h3-responsive ml-auto mr-auto text-justify-center text-center font-weight-bold">Top
+                    Employers</h3>
+            </div>
+            <hr id="jobs-posted-hr">
+            <div class="carousel slide" id="demo" data-ride="carousel">
+
+                <!--carousal indicators deleted-->
+
+                <!-- The slideshow -->
+                <div class="carousel-inner pl-2 pr-2">
+                    <!-- 1st slide-->
+                    <div class="carousel-item active">
+                        <div class="row ml-auto mr-auto">
+
+
+                            <div class="col-md-4">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/escort.jpg" class="img-responsive ml-auto mr-auto mt-auto mb-auto"
+                                        alt="udacitysvg"  id="client_img">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/genpact.png" class="img-responsive ml-auto mr-auto mt-auto mb-auto"
+                                        alt="js-svg"  id="client_img">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/ibm.jpg" class="img-responsive ml-auto mr-auto mt-auto mb-auto"
+                                        alt="php-svg"  id="client_img">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- second slide-->
+                    <div class="carousel-item ">
+                        <div class="row ml-auto mr-auto">
+
+                            <div class="col-md-4 ml-auto mr-auto ">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/ht.jpg" class="img-responsive ml-auto mr-auto mt-auto mb-auto" alt="ang-svg" id="client_img">
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-4 ml-auto mr-auto ">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/google.gif" class="img-responsive ml-auto mr-auto mt-auto mb-auto"
+                                        alt="andr-svg" id="client_img">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 ml-auto mr-auto ">
+                                <div class="row ml-auto mr-auto pt-3 pb-3">
+                                    <img src="images/infosys.png" class="img-responsive ml-auto mr-auto mt-auto mb-auto"
+                                        alt="fire-svg" id="client_img">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third slide-->
+                    <!--/no slide 3 in carousal/-->
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon mr-auto"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon ml-auto"></span>
+                </a>
+            </div>
+        </div>
+        <!-- /top companies contributed/ -->
+        <!-- want to work together -->
+        <div class="container-fluid" id="join-us-container">
+            <div class="container">
+                <div class="row col-md-12">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <h3 class="h3-responsive text-justify-center" data-aos="fade-left">Find your dream
+                                jobs on
+                                the go</h3>
+                        </div>
+                        <div class="row" data-aos="flip-up">
+                            <p class="pr-responsive text-justify-left text-disabled">
+                                Eighty percent of success is showing up. Talent hits a target no one else can
+                                hit;
+                                genius hits a target no one else can see.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-auto mb-auto">
+                        <div class="row float-right" data-toggle="modal" data-target="#exampleRegisterModal"><button
+                                class="together-button" data-aos="fade-left">Join us</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /want to work together /-->
+        <!-- jobs posted -->
+        <div class="container featured-jobs section">
+            <div class="row">
+                <h3 class="h3-responsive ml-auto mr-auto text-justify-center text-center font-weight-bold">Featured
+                    Jobs</h3>
+            </div>
+            <hr id="jobs-posted-hr">
+            <div class="row ml-auto mr-auto">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="#">
+                                            <img src="images/features/img-1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">Graphic Designer</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> Dallas, United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 4 months ago</span>
+                                <span><i class="far fa-clock"></i> Full Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="#">
+                                            <img src="images/features/img-2.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">Software Engineer</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> Delaware, United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 5 months ago</span>
+                                <span><i class="far fa-clock"></i> Part Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="#">
+                                            <img src="images/features/img-3.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">Managing Director</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> NY, United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 3 months ago</span>
+                                <span><i class="far fa-clock"></i> Full Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="  ">
+                                            <img src="images/features/img-4.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">Financial Manager</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> Washington,
+                                            United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 1 months ago</span>
+                                <span><i class="far fa-clock"></i> Part Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="#">
+                                            <img src="images/features/img-5.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">TEACHER</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> Dallas, United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 6 months ago</span>
+                                <span><i class="far fa-clock"></i> Full Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="featured-item">
+                            <div class="featured-wrap">
+                                <div class="featured-inner">
+                                    <figure class="item-thumb">
+                                        <a class="hover-effect" href="#">
+                                            <img src="images/features/img-6.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="item-body">
+                                        <h3 class="job-title"><a href="#">Content Writer</a></h3>
+                                        <div class="adderess"><i class="fa fa-map-marker"></i> NY, United
+                                            States</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-foot">
+                                <span><i class="fa fa-calendar"></i> 7 months ago</span>
+                                <span><i class="far fa-clock"></i> Part Time</span>
+                                <div class="view-iocn">
+                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /jobs posted/ -->
+        <!-- /news section/ -->
+        <div class="container section" id="blog">
+            <div class="row">
+                <h3 class="h3-responsive ml-auto mr-auto text-justify-center text-center font-weight-bold">Latest
+                    News</h3>
+            </div>
+            <hr id="jobs-posted-hr">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+                    <!-- Blog Item Starts -->
+                    <div class="blog-item-wrapper">
+                        <div class="blog-item-img">
+                            <a href="single-post.html">
+                                <img src="images/blog/img1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-item-text">
+                            <div class="meta-tags">
+                                <span class="date"><i class="ti-calendar"></i> Dec 20, 2017</span>
+                                <span class="comments"><a href="#"><i class="ti-comment-alt"></i> 5 Comments</a></span>
+                            </div>
+                            <a href="single-post.html">
+                                <h3>
+                                    Tips to write an impressive resume online for beginner
+                                </h3>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium
+                                asperiores
+                                ad
+                                vitae.
+                            </p>
+                            <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Blog Item Wrapper Ends-->
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+                    <!-- Blog Item Starts -->
+                    <div class="blog-item-wrapper">
+                        <div class="blog-item-img">
+                            <a href="single-post.html">
+                                <img src="images/blog/img2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-item-text">
+                            <div class="meta-tags">
+                                <span class="date"><i class="ti-calendar"></i> Jan 20, 2018</span>
+                                <span class="comments"><a href="#"><i class="ti-comment-alt"></i> 5 Comments</a></span>
+                            </div>
+                            <a href="single-post.html">
+                                <h3>
+                                    Let's explore 5 cool new features in JobBoard theme
+                                </h3>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium
+                                asperiores
+                                ad
+                                vitae.
+                            </p>
+                            <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Blog Item Wrapper Ends-->
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+                    <!-- Blog Item Starts -->
+                    <div class="blog-item-wrapper">
+                        <div class="blog-item-img">
+                            <a href="single-post.html">
+                                <img src="images/blog/img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-item-text">
+                            <div class="meta-tags">
+                                <span class="date"><i class="ti-calendar"></i> Mar 20, 2018</span>
+                                <span class="comments"><a href="#"><i class="ti-comment-alt"></i> 5 Comments</a></span>
+                            </div>
+                            <a href="single-post.html">
+                                <h3>
+                                    How to convince recruiters and get your dream job
+                                </h3>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium
+                                asperiores
+                                ad
+                                vitae.
+                            </p>
+                            <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Blog Item Wrapper Ends-->
+                </div>
+            </div>
+            <div class="row ml-auto mr-auto">
+            </div>
+        </div>
+        <!-- /news section/ -->
+        <!-- map and form -->
+        <div class="container-fluid p-0" id="map-and-form">
+            <div class="container-fluid p-0">
+                <div class="row col-md-12 m-0 p-0">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76236.70280244217!2d-122.230571525341!3d37.43412311040696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2snl!4v1540921007911"
+                                width="800px" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row" id="map-form">
+                            <div class="row d-block">
+                                <h3 class="h3-responsive text-justify-left">Let's work together</h3>
+                            </div>
+                            <div class="row d-block">
+                                <p class="p-responsive text-disabled text-justify-left">Great vision without
+                                    great
+                                    people is irrelevant.
+                                    Coming together is a beginning, staying together is progress, and working
+                                    together
+                                    is success. So let's
+                                    get connected to do great things together.
+                                </p>
+                            </div>
+                            <form class="ml-auto mr-auto" id="map-form-content">
+                                <div class="row map-form-input d-block">
+                                    <input type="text" placeholder="Enter email">
+                                </div>
+                                <div class="row map-form-input d-block">
+                                    <input type="text" placeholder="Enter email">
+
+                                </div>
+                                <div class="row map-form-input d-block">
+                                    <input type="text" placeholder="Enter message">
+                                </div>
+                                <div class="row d-block mr-auto ml-4 mt-2">
+                                    <button id="map-form-button">Send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /map and form /-->
+    </main>
+    <!-- sidemenu-->
+    <div class="sidenav">
+        <div class="row sidebar-buttons ml-auto mr-auto"><i class="far fa-question-circle"></i></div>
+        <div class="row sidebar-buttons ml-auto mr-auto"><i class="fas fa-book"></i></div>
+        <div class="row sidebar-buttons ml-auto mr-auto"><i class="fab fa-youtube"></i></div>
+        <div class="row sidebar-buttons ml-auto mr-auto"><i class="fas fa-dollar-sign"></i></div>
+    </div>
+    <!--/sideenu/-->
+    <!-- footer include all types of js after it-->
+    <!--            footer              -->
+    <footer>
+        <section class="footer-Content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title"><img src="images/a.png" style="height:50px" class="img-responsive"
+                                    alt="Footer Logo"></h3>
+                            <div class="textwidget">
+                                <p>450 serra Mall, Building A2<br>
+                                    Stanford, CA 94305<br>
+                                    Farnborough Hampshire<br>
+                                    USA<br>
+                                    Tel: +44 (0) 1276 701 227</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h3 class="title1">Quick Links</h3>
+                            <ul class="menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">License</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h3 class="title2">Trending Jobs</h3>
+                            <ul class="menu">
+                                <li><a href="#">Android Developer</a></li>
+                                <li><a href="#">Senior Accountant</a></li>
+                                <li><a href="#">Frontend Developer</a></li>
+                                <li><a href="#">Junior Tester</a></li>
+                                <li><a href="#">Project Manager</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h3 class="title3">Follow Us</h3>
+                            <div class="bottom-social-icons social-icon">
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a class="gplus" href="#"><i class="fab fa-google-plus"></i></a>
+                            </div>
+                            <p>Join our mailing list to stay up to date and get notices about our new releases!</p>
+                            <form class="subscribe-box">
+                                <input type="text" placeholder="Your email">
+                                <input type="submit" class="btn-system" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright Start  -->
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-info text-center">
+                            <p>All Rights reserved &copy; 2018 - Designed & Developed by <a rel="nofollow" href="#">WEBEX
+                                    TEAM</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js cdns-->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script href="login-box-concept/js/index.js"></script>
+    <script src="client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUQMRWZw7S8DPNcoyhKNymdpKmUlBQ3c&callback=initMap"
+        async defer></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"></script>
+
+
+
+</body>
+
+</html>
