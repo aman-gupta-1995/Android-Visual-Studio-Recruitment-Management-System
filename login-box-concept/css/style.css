@@ -4,7 +4,7 @@ body {
 
 body ::-webkit-input-placeholder {  
   color: #4E546D;  
-}
+} 
 body .authent {   
   display: none; 
   background: #35394a;
