@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     $('.progress .progress-bar').css("width",
-              function() {
+              function() { 
                   return $(this).attr("aria-valuenow") + "%";
               }
       )
