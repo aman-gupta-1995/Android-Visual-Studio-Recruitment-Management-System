@@ -4,6 +4,6 @@ $(document).ready(function() {
               function() { 
                   return $(this).attr("aria-valuenow") + "%";
               } 
-      ) 
+      )  
   });    
       
