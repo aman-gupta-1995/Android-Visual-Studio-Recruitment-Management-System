@@ -1,5 +1,5 @@
 /* login and logout js */ 
-$('input[type="submit"]').click(function(){  
+$('input[type="submit"]').click(function(){   
   $('.login').addClass('test') 
   setTimeout(function(){    
     $('.login').addClass('testtwo')
