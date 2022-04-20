@@ -5,7 +5,7 @@
 } 
 .affix{ 
   position: fixed; 
-  margin-left: -15px !important;
+  margin-left: -15px !important; 
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     -webkit-transform: translate3d(0,0,0);
