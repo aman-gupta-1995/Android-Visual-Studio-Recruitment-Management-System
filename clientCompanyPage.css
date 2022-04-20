@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
     
-} 
+}  
 .affix{ 
   position: fixed; 
   margin-left: -15px !important; 
