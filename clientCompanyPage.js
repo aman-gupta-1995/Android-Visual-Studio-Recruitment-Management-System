@@ -1,4 +1,4 @@
-/* login and logout js */
+/* login and logout js */ 
 $('input[type="submit"]').click(function(){ 
   $('.login').addClass('test') 
   setTimeout(function(){  
