@@ -4,7 +4,7 @@ This Academic Free License (the "License") applies to any original work of autho
 
 Licensed under the Academic Free License version 3.0 
   
-Grant of Copyright License. Licensor grants You a worldwide, royalty-free, non-exclusive, sublicensable license, for the duration of the copyright, to do the following:
+Grant of Copyright License. Licensor grants You a worldwide, royalty-free, non-exclusive, sublicensable license, for the duration of the copyright, to do the following: 
 
 to reproduce the Original Work in copies, either alone or as part of a collective work;
 
