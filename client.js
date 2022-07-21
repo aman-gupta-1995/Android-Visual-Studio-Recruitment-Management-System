@@ -5,6 +5,6 @@ $(document).ready(function() {
                   return $(this).attr("aria-valuenow") + "%";
               } 
       ) 
-  });    
+  });   
   
  
