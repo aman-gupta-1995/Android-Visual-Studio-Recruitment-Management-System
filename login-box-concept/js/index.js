@@ -3,7 +3,7 @@
 
 // var navbar = $('#header-line-2'); 
 // var sticky = navbar.offsetTop;
- 
+  
 // function myFunction() {
 //   if (window.pageYOffset >= sticky) {  
 //     navbar.classList.add("sticky") 
