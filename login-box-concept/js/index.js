@@ -1,5 +1,5 @@
 // console.log('hello');
-// window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()}; 
 
 // var navbar = $('#header-line-2'); 
 // var sticky = navbar.offsetTop;
