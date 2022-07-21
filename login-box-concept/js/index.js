@@ -1,7 +1,7 @@
 // console.log('hello');
 // window.onscroll = function() {myFunction()};
 
-// var navbar = $('#header-line-2');
+// var navbar = $('#header-line-2'); 
 // var sticky = navbar.offsetTop;
 
 // function myFunction() {
