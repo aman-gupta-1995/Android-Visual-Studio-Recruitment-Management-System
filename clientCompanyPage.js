@@ -27,7 +27,7 @@ $('input[type="text"],input[type="password"]').focus(function(){
 });
 $('input[type="text"],input[type="password"]').blur(function(){
   $(this).prev().animate({'opacity':'.5'},200)
-});
+}); 
 
 $('input[type="text"],input[type="password"]').keyup(function(){
   if(!$(this).val() == ''){ 
