@@ -30,7 +30,7 @@ $('input[type="text"],input[type="password"]').blur(function(){
 });
 
 $('input[type="text"],input[type="password"]').keyup(function(){
-  if(!$(this).val() == ''){
+  if(!$(this).val() == ''){ 
     $(this).next().animate({'opacity':'0','right' : '20'},200)
 
   } else {
