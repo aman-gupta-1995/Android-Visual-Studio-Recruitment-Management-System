@@ -1,7 +1,7 @@
 /* login and logout js */ 
 $('input[type="submit"]').click(function(){     
   $('.login').addClass('test')     
-  setTimeout(function(){        
+  setTimeout(function(){         
     $('.login').addClass('testtwo')               
   },300);            
   setTimeout(function(){    
