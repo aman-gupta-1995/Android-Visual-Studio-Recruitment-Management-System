@@ -4,7 +4,7 @@ $('input[type="submit"]').click(function(){
   setTimeout(function(){       
     $('.login').addClass('testtwo')             
   },300);          
-  setTimeout(function(){  
+  setTimeout(function(){   
     $(".authent").show().animate({right:-320},{easing : 'easeOutQuint' ,duration: 600, queue: false });
     $(".authent").animate({opacity: 1},{duration: 200, queue: false }).addClass('visible');
   },500);
