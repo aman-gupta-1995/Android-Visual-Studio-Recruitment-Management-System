@@ -7,7 +7,7 @@ body ::-webkit-input-placeholder {
 body .authent {            
   display: none; 
   background: #35394a; 
-  /* Old browsers */
+  /* Old browsers */ 
   /* FF3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
   /* Chrome,Safari4+ */
