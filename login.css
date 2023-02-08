@@ -196,7 +196,7 @@ body .login_fields__submit input:hover {
 .brand {
   position: absolute;
   left: 20px;
-  bottom: 14px;
+  bottom: 14px; 
 } 
 .brand img {
   width: 30px;
