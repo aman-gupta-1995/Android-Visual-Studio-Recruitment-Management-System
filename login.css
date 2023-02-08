@@ -191,7 +191,7 @@ body .login_fields__submit input:hover {
   transition-property: background,color;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
-}
+} 
 
 .brand {
   position: absolute;
