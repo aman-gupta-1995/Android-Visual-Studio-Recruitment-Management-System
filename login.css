@@ -78,7 +78,7 @@ body .login {
   transform-origin: 161px 100%;
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  position: relative; 
+  position: relative;  
   width: 100%;
   border-top: 2px solid #D8312A;
   height: 500px;
